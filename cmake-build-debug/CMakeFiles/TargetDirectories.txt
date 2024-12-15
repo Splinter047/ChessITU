@@ -1,0 +1,3 @@
+C:/Users/Muaaz/Documents/ProgrammingFundamentals/Chess/ChessITU/cmake-build-debug/CMakeFiles/ChessITU.dir
+C:/Users/Muaaz/Documents/ProgrammingFundamentals/Chess/ChessITU/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Muaaz/Documents/ProgrammingFundamentals/Chess/ChessITU/cmake-build-debug/CMakeFiles/rebuild_cache.dir
