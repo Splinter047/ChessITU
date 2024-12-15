@@ -77,7 +77,7 @@
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Muaaz/Documents/ProgrammingFundamentals/Chess/ChessITU/CMakeLists.txt",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.postfix.templates"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -105,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1734252307007</updated>
-      <workItem from="1734252309604" duration="5651000" />
+      <workItem from="1734252309604" duration="8225000" />
     </task>
     <servers />
   </component>
