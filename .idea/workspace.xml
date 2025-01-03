@@ -37,11 +37,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2460433-6fe5-4171-92c2-e1e9a9c22831" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/init.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/init.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/blk_bishop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/blk_king.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/blk_knight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/blk_pawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/blk_queen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/blk_rook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/wht_bishop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/wht_king.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/wht_knight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/wht_pawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/wht_queen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/textures/wht_rook.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +121,7 @@
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChessITU" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="true" EMULATE_TERMINAL="false" WORKING_DIR="file://$FileDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ChessITU" TARGET_NAME="ChessITU" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ChessITU" RUN_TARGET_NAME="ChessITU">
+    <configuration name="ChessITU" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" WORKING_DIR="file://$FileDir$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ChessITU" TARGET_NAME="ChessITU" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ChessITU" RUN_TARGET_NAME="ChessITU">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -208,7 +219,7 @@
       <workItem from="1734252309604" duration="8318000" />
       <workItem from="1735189619934" duration="55000" />
       <workItem from="1735189694155" duration="32000" />
-      <workItem from="1735814058828" duration="7102000" />
+      <workItem from="1735814058828" duration="11641000" />
     </task>
     <servers />
   </component>

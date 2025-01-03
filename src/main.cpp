@@ -1,5 +1,6 @@
 #include <fstream>
 #include <iostream>
+#include <string.h>
 #include <SFML/Graphics.hpp>
 
 const int WIN_SIZE = 800; // Window size in pixels
@@ -11,6 +12,9 @@ const sf::Color DARK_BLOCK(181, 136, 99); // Color of dark block
 
 void initBoard(std::ifstream&, char[WIDTH][WIDTH]);
 void drawBoard(sf::RenderWindow&);
+void drawPieces(sf::RenderWindow&, char[WIDTH][WIDTH]);
+int strCharray(char* dest, const char* src);
+int strCharray(char* dest, const char* src, int start);
 
 int main()
 {
@@ -26,6 +30,9 @@ int main()
 	initBoard(initLayout, board);
 	initLayout.close();
 
+	// Turn counter, even -> white | odd -> black
+	int turn = 0;
+
 	// Main loop
 	while (window.isOpen())
 	{
@@ -37,6 +44,7 @@ int main()
 
 		window.clear();
 		drawBoard(window);
+		drawPieces(window, board);
 
 		// Outputs anything drawn to the window
 		window.display();
@@ -65,4 +73,53 @@ void drawBoard(sf::RenderWindow &window) {
 			window.draw(square);
 		}
 	}
+}
+
+void drawPieces(sf::RenderWindow &window, char mat[WIDTH][WIDTH]) {
+	sf::Texture pieceImg;
+	sf::Sprite piece(pieceImg);
+	char* fileStr = new char[20]{'\0'};
+	int idx = 0;
+
+	for (int row = 0; row < WIDTH; row++) {
+		for (int col = 0; col < WIDTH; col++) {
+			if (mat[row][col] == '.') continue;
+
+			if (mat[row][col] >= 'A' && mat[row][col] <= 'Z')
+				idx = strCharray(fileStr, "textures/blk_");
+			else if (mat[row][col] >= 'a' && mat[row][col] <= 'z')
+				idx = strCharray(fileStr, "textures/wht_");
+
+			fileStr[idx] = mat[row][col];
+			idx = strCharray(fileStr, ".png", idx + 1);
+
+			pieceImg.loadFromFile(fileStr);
+			piece.setTexture(pieceImg, true);
+
+			piece.setPosition({col * BLOCK_SIZE + 18, row * BLOCK_SIZE + 18});
+			window.draw(piece);
+		}
+	}
+
+	delete[] fileStr;
+}
+
+int strCharray(char* dest, const char* src) {
+	int idx = 0;
+	while (src[idx] != '\0') {
+		dest[idx] = src[idx];
+		idx++;
+	}
+	dest[idx] = '\0';
+	return idx;
+}
+
+int strCharray(char* dest, const char* src, int start) {
+	int idx = 0;
+	while (src[idx] != '\0') {
+		dest[start + idx] = src[idx];
+		idx++;
+	}
+	dest[start + idx] = '\0';
+	return start + idx;
 }
